@@ -1,0 +1,70 @@
+/* ----------------------ETIQUETAS----------------------*/
+/* -------------PALETA------------------*/
+$amarillo: #FFDF91;
+$marron: #331C08;
+$marronClaro: #91684a;
+$cremita: #eaac7f;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: normal;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: white;
+    /*Light 300 Regular 400*/
+}
+
+h1,
+h2 {
+    line-height: normal;
+    margin: 0;
+}
+
+p {
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@import "./header-navBar";
+@import "./firstSection";
+@import "./elmate";
+@import "./secondSection";
+@import "./thirdSection";
+@import "./gridFotos";
+@import "./footer";
+@import "./infoMates";
+@import "./contactanos";
+@import "./mediaQueries";
+
+
+
+/* ----------------------Divisor Video----------------------*/
+
+.video {
+    width: 100%;
+    background-color: black;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+/* ----------------------CLASES----------------------*/
+/* Clase temporal para entrega, BORRARLA */
+.productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -291,6 +291,13 @@ a {
           filter: brightness(75%);
 }
 
+.tituloPrimario {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #91684a;
+  font-weight: 400;
+  font-size: 2.2em;
+}
+
 /* ---------------------- Divisor/Banner El Mate ----------------------*/
 .elmate {
   position: relative;
@@ -427,12 +434,13 @@ a {
   font-size: 1.875em;
   color: #6D4B37;
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 #secondSection .nosotros__texto p {
   text-align: justify;
   font-size: 1.0625em;
+  margin-bottom: 2rem;
 }
 
 #secondSection .nosotrosArriba {
@@ -443,7 +451,7 @@ a {
   display: none;
 }
 
-#secondSection .negrita {
+.negrita {
   font-weight: bold;
 }
 
@@ -640,10 +648,7 @@ a {
   margin-top: 50px;
 }
 
-.infoMates h2 {
-  font-family: 'Josefin Sans', sans-serif;
-  color: #91684a;
-  text-transform: uppercase;
+.infoMates h1, .infoMates h2 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -823,6 +828,180 @@ input[type="submit"]:hover {
   }
 }
 
+.infoGrabados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 100px 0px;
+}
+
+.textoGrabados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  margin: 0px 20px;
+}
+
+.textoGrabados h1 {
+  margin-bottom: 20px;
+}
+
+.textoGrabados .parrafoGrabados {
+  height: auto;
+  color: black;
+  text-align: justify;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.imgGrabados {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+}
+
+.imgGrabados img {
+  width: 250px;
+  height: 250px;
+}
+
+@media only screen and (max-width: 1110px) {
+  .imgGrabados {
+    width: auto;
+  }
+  .imgGrabados img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .textoGrabados {
+    width: 95%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-height: 900px) {
+  .infoGrabados {
+    height: 100vh;
+    margin: 0;
+  }
+}
+
+#bolsos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.infoBolsos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: black;
+  margin: 6.25rem 10px;
+}
+
+.infoBolsos h1 {
+  text-align: center;
+  margin-right: 5rem;
+  font-size: 2rem;
+}
+
+.infoBolsos p {
+  font-size: 1.2rem;
+  text-align: justify;
+  width: 50%;
+}
+
+#bombillas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.infoBombillas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10% 10px;
+  color: black;
+}
+
+.infoBombillas .colBombillas {
+  margin-left: 20px;
+  width: 50%;
+}
+
+.infoBombillas .colBombillas h1 {
+  margin-bottom: 25px;
+}
+
+.infoBombillas .colBombillas p {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 660px) {
+  .infoBombillas .colBombillas {
+    margin: 0px;
+    width: 90%;
+  }
+  .infoBombillas .colBombillas h1 {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
 /* -------- Grid Fotos -------- */
 @media screen and (min-width: 600px) {
   .tarjetaAlta {
@@ -922,6 +1101,27 @@ input[type="submit"]:hover {
     width: 90%;
     height: 29rem;
     margin-bottom: 20px;
+  }
+  .infoBolsos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .infoBolsos h1 {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .infoBolsos p {
+    width: 95%;
+    margin: 0;
   }
 }
 

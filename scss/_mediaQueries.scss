@@ -5,7 +5,6 @@
     .tarjetaAlta {
         grid-row: span 2 / auto;
     }
-
     .tarjetaAncha {
         grid-column: span 2 / auto;
     }
@@ -29,19 +28,16 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-
         h1 {
             font-size: 35px;
             padding: 0px 5%;
         }
-
         a {
             display: flex;
             width: 100%;
             align-items: center;
             justify-content: center;
         }
-
         p {
             display: none;
         }
@@ -52,7 +48,6 @@
         flex-direction: column;
         align-items: center;
         margin: 0;
-
         .categoria {
             width: 99%;
 
@@ -67,13 +62,11 @@
         .elmate__titulo {
             font-size: 30px;
         }
-
         .elmate__texto {
             padding: 0px 2rem;
             font-size: 1.125rem;
             text-align: justify;
         }
-
         .elmate__boton {
             width: 12.5rem;
             height: 2.5rem;
@@ -88,7 +81,6 @@
         height: auto;
         position: unset;
         padding: 80px 20px;
-
         .nosotros__mate {
             display: none;
         }
@@ -101,7 +93,6 @@
 
     #thirdSection {
         margin: 50px 0px;
-
         div {
             width: 90%;
             height: 29rem;
@@ -123,6 +114,20 @@
             margin: 0;
         }
     }
+    
+    .imgGrabados{
+        width: auto;
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .textoGrabados{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+    }
 
 }
 
@@ -140,7 +145,6 @@
             width: 48%;
         }
     }
-
     .elmate p {
         padding: 0px 10%;
     }
@@ -148,16 +152,13 @@
     #secondSection {
         background-image: none;
         height: auto;
-
         .nosotros__mate {
             display: none;
         }
-
         .nosotros__texto {
             position: unset;
             padding: 10% 0;
         }
-
         .nosotrosAbajo {
             display: block;
             position: absolute;
@@ -165,7 +166,6 @@
             bottom: 0;
             z-index: 1;
         }
-    
         .nosotrosArriba {
             display: block;
             position: absolute;
@@ -178,7 +178,6 @@
     #thirdSection {
         display: flex;
         flex-direction: column;
-
         div {
             margin-top: 30px;
         }
@@ -197,7 +196,6 @@
             top: 30%;
             left: 3%;
             color: black;
-    
             p {
                 font-size: 1.25rem;
             }
@@ -224,29 +222,25 @@
 
     #secondSection {
         height: 800px;
-
+        
         .nosotros__mate {
             top: 15%;
             width: 500px;
             height: 620px;
         }
-
         .nosotros__texto {
             left: 30%;
-
             h3 {
                 font-size: 2.325rem;
             }
-    
             p {
                 font-size: 1.275rem;
             }
         }
-
         .nosotrosArriba {
             display: none;
         }
-    
+
         .nosotrosAbajo {
             display: none;
         }

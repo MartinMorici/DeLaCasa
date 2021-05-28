@@ -202,6 +202,10 @@ a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.411);
 }
 
+.navbarBlanco {
+  background-color: white;
+}
+
 /* ---------------------- Categorias de productos ----------------------*/
 #firstSection {
   display: -webkit-box;
@@ -565,7 +569,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
+  width: 100%;
   padding: 40px 60px 20px 60px;
   background-color: #573A29;
 }
@@ -628,7 +632,7 @@ a {
           filter: brightness(50%);
 }
 
-/* --------------- Info Mates --------------- */
+/* --------------- Seccion Mates --------------- */
 .infoMates {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -676,6 +680,16 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 400px;
+}
+
+@media only screen and (max-width: 800px) {
+  .infoMates__card {
+    margin-top: 40px;
+  }
+  .infoMates p {
+    text-align: justify;
+    padding: 0px 20px;
+  }
 }
 
 /* --------------- Contactanos --------------- */
@@ -828,6 +842,7 @@ input[type="submit"]:hover {
   }
 }
 
+/* --------------- Seccion Grabados --------------- */
 .infoGrabados {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -839,6 +854,7 @@ input[type="submit"]:hover {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  min-height: 100vh;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 100px 0px;
@@ -897,14 +913,13 @@ input[type="submit"]:hover {
 @media only screen and (max-width: 899px) {
   .textoGrabados {
     width: 95%;
-    margin-top: 20px;
+    margin-top: 40px;
   }
-}
-
-@media only screen and (min-height: 900px) {
+  .textoGrabados h1 {
+    text-align: center;
+  }
   .infoGrabados {
-    height: 100vh;
-    margin: 0;
+    min-height: 0;
   }
 }
 
@@ -997,8 +1012,18 @@ input[type="submit"]:hover {
     width: 90%;
   }
   .infoBombillas .colBombillas h1 {
-    margin-top: 20px;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 921px) {
+  .infoBombillas .colBombillas {
+    display: inline-block;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0px;
+    text-align: center;
+    padding: 0px 10%;
   }
 }
 
@@ -1122,6 +1147,26 @@ input[type="submit"]:hover {
   .infoBolsos p {
     width: 95%;
     margin: 0;
+  }
+  .imgGrabados {
+    width: auto;
+  }
+  .imgGrabados img {
+    width: 150px;
+    height: 150px;
+  }
+  .textoGrabados {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 95%;
   }
 }
 
@@ -1299,5 +1344,9 @@ input[type="submit"]:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.bodyColor {
+  background-color: #E9E8E7;
 }
 /*# sourceMappingURL=style.css.map */

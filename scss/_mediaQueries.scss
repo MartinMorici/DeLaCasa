@@ -49,8 +49,8 @@
         align-items: center;
         margin: 0;
         .categoria {
-            width: 99%;
-
+            width: 100%;
+            margin: 1px 0px;
             .categoria__boton {
                 font-size: 0.9rem;
             }
@@ -59,6 +59,7 @@
 
 
     .elmate {
+        margin-top: 0;
         .elmate__titulo {
             font-size: 30px;
         }
@@ -75,11 +76,10 @@
     }
 
     #secondSection {
-        background: url(../multimedia/vertical.png) no-repeat center center;
-        background-size: cover;
+        background-image: none;
+        position: relative;
         flex-direction: column;
         height: auto;
-        position: unset;
         padding: 80px 20px;
         .nosotros__mate {
             display: none;
@@ -89,10 +89,24 @@
             margin: 50px 0px;
             padding: 0px;
         }
+        .nosotrosAbajo{
+            display: block;
+            position: absolute;
+            width: auto;
+            bottom: 0;
+            z-index: 1;
+        }
+        .nosotrosArriba{
+            display: block;
+            position: absolute;
+            width: auto;
+            top: 0;
+            z-index: 1;
+        }
     }
 
     #thirdSection {
-        margin: 50px 0px;
+        margin: 0px 0px;
         div {
             width: 90%;
             height: 29rem;
@@ -117,9 +131,10 @@
     
     .imgGrabados{
         width: auto;
+        grid-gap: 2px;
         img{
-            width: 150px;
-            height: 150px;
+            width: 175px;
+            height: 175px;
         }
     }
     .textoGrabados{

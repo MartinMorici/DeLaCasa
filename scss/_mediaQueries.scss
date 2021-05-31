@@ -114,6 +114,18 @@
         }
     }
 
+    .infoMates{
+        .infoMates__card{
+            width: 95%;
+            height: auto;
+            padding: 20px 0px;
+            h1,h2{
+                text-align: center;
+                padding: 0px 15px;
+            }
+        }
+    }
+
     .infoBolsos{
         flex-direction: column;
         justify-content: center;

@@ -9,26 +9,44 @@
     flex-wrap: wrap;
     width: 100%;
     margin-top: 50px;
+    margin-bottom: 50px;
+    & .infoMates__card:nth-child(2){
+        p{
+            padding: 0px 29px;
+        }
+    }
+
+    & .infoMates__card:nth-child(3){
+        p{
+            padding: 0px 26px;
+        }
+    }
 
     h1,h2 {
         margin-top: 20px;
         margin-bottom: 10px;
+        color: $marron;
     }
 
     p {
-        color: black;
-        padding: 0px 0px;
+        color: #4A412A;
         text-align: center;
         font-weight: 400;
         margin-bottom: 20px;
+        margin-top: 10px;
     }
 
     .infoMates__card {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        width: 400px;
+        width: 25rem;
+        height: 31.25rem;
+        background-color: $amarillo;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+        margin-top: 20px;
     }
 }
 
@@ -43,3 +61,4 @@
         }
     }
 }
+

@@ -111,10 +111,16 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 618px) {
+    .contenedorContacto{
+        padding: 15px 5px;
+    }
+    .padreContacto{
+        padding: 30px 10px;
+    }
+
     .contacto{
         flex-basis: 100%;
     }
-    
     
     .mapa{
         margin-top: 2rem;

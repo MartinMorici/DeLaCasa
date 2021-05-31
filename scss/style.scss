@@ -47,8 +47,7 @@ a {
 @import "./mates";
 @import "./contactanos";
 @import "./grabados";
-@import "./bolsos";
-@import "./bombillas";
+@import "./infoSecciones";
 @import "./mediaQueries";
 
 
@@ -64,14 +63,18 @@ a {
 }
 
 /* ----------------------CLASES----------------------*/
-/* Clase temporal para entrega, BORRARLA */
-.productos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .bodyColor{
     background-color: #E9E8E7;
 }
 
+.tituloPrimario{
+    font-family: 'Josefin Sans', sans-serif;
+    color: $amarillo;
+    font-weight: 400;
+    font-size: 2.2em;
+}
+
+.cremita{
+    color: $cremita;
+}

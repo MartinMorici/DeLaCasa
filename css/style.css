@@ -628,7 +628,7 @@ a {
           filter: brightness(50%);
 }
 
-/* --------------- Seccion Mates --------------- */
+/* --------------- Cards - Info Mates --------------- */
 .infoMates {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -694,13 +694,123 @@ a {
   margin-top: 20px;
 }
 
+/* --------------- Personaliza tu mate - Grabados --------------- */
+.infoGrabados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 6%;
+}
+
+.infoGrabados .corto {
+  display: none;
+}
+
+.infoGrabados h3 {
+  color: #331C08;
+  margin-bottom: 0px;
+  line-height: normal;
+}
+
+.infoGrabados p {
+  color: black;
+  font-weight: 400;
+  font-size: 1.3em;
+  text-align: justify;
+}
+
+.infoGrabados .infoGrabados__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 3.125rem;
+}
+
+.infoGrabados .infoGrabados__col .barra {
+  height: 2px;
+}
+
+.infoGrabados .infoGrabados__boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 8.75rem;
+  height: 2.25rem;
+  background-color: #91684a;
+  color: white;
+  font-weight: 600;
+  margin-top: 30px;
+  font-size: 18px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.imgGrabados {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (220px)[2];
+      grid-template-columns: repeat(2, 220px);
+}
+
+.imgGrabados img {
+  width: 220px;
+  height: 220px;
+}
+
 @media only screen and (max-width: 800px) {
   .infoMates__card {
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
   .infoMates p {
     text-align: justify;
     padding: 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 1152px) {
+  .infoGrabados {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .infoGrabados .infoGrabados__col {
+    margin-bottom: 20px;
+    padding-right: 0px;
+  }
+  .imgGrabados {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
+  .imgGrabados img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .infoGrabados .corto {
+    display: block;
+  }
+  .infoGrabados .largo {
+    display: none;
+  }
+  .infoGrabados h3 {
+    text-align: center;
   }
 }
 
@@ -857,88 +967,6 @@ input[type="submit"]:hover {
     margin-top: 2rem;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-  }
-}
-
-/* --------------- Seccion Grabados --------------- */
-.infoGrabados {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  min-height: 100vh;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 100px 0px;
-}
-
-.textoGrabados {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50%;
-  margin: 0px 20px;
-}
-
-.textoGrabados h1 {
-  margin-bottom: 20px;
-}
-
-.textoGrabados .parrafoGrabados {
-  height: auto;
-  color: black;
-  text-align: justify;
-  font-size: 1.2em;
-  font-weight: 400;
-}
-
-.imgGrabados {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
-  grid-gap: 10px;
-}
-
-.imgGrabados img {
-  width: 250px;
-  height: 250px;
-}
-
-@media only screen and (max-width: 1110px) {
-  .imgGrabados {
-    width: auto;
-  }
-  .imgGrabados img {
-    width: 200px;
-    height: 200px;
-  }
-}
-
-@media only screen and (max-width: 899px) {
-  .textoGrabados {
-    width: 95%;
-    margin-top: 40px;
-  }
-  .textoGrabados h1 {
-    text-align: center;
-  }
-  .infoGrabados {
-    min-height: 0;
-    margin-top: 20px;
   }
 }
 
@@ -1183,27 +1211,6 @@ input[type="submit"]:hover {
   .infoBolsos p {
     width: 95%;
     margin: 0;
-  }
-  .imgGrabados {
-    width: auto;
-    grid-gap: 2px;
-  }
-  .imgGrabados img {
-    width: 175px;
-    height: 175px;
-  }
-  .textoGrabados {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 95%;
   }
 }
 

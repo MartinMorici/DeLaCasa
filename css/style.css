@@ -759,6 +759,15 @@ a {
   font-size: 18px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.infoGrabados .infoGrabados__boton:hover {
+  background-color: #331C08;
+  color: #FFDF91;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
 .imgGrabados {
@@ -811,6 +820,146 @@ a {
   }
   .infoGrabados h3 {
     text-align: center;
+  }
+}
+
+.infoCombos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #EBEBEB;
+  padding: 80px 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.infoCombos img {
+  width: 500px;
+  height: 500px;
+}
+
+.infoCombos h1 {
+  font-weight: bold;
+  color: black;
+  font-size: 85px;
+  margin-bottom: 22px;
+  line-height: 75%;
+}
+
+.infoCombos p {
+  color: #3D3D3D;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.infoCombos .infoCombos__col {
+  width: 460px;
+  height: auto;
+  margin-right: 80px;
+}
+
+.infoCombos .infoCombos__col .infoCombos__titulo {
+  display: block;
+  color: #eaac7f;
+}
+
+.infoCombos .infoCombos__botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  color: black;
+  font-weight: 700;
+  margin-top: 45px;
+}
+
+.infoCombos .infoCombos__botones .infoCombosBoton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  padding: 10px 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.infoCombos .infoCombos__botones .infoCombosBoton:nth-child(1) {
+  background-color: #CD9462;
+  margin-right: 7px;
+}
+
+.infoCombos .infoCombos__botones .infoCombosBoton:nth-child(2) {
+  background-color: #925E46;
+}
+
+.infoCombos .infoCombos__botones .infoCombosBoton:hover {
+  background-color: #331C08;
+  color: #FFDF91;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.infoCombos .infoCombos__botones .boton2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3.5px;
+  background-color: #925E46;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .infoCombos {
+    text-align: center;
+  }
+  .infoCombos .infoCombos__col {
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+  .infoCombos .infoCombos__botones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .infoCombos p {
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .infoCombos img {
+    width: 100%;
+    height: 100%;
   }
 }
 

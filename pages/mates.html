@@ -10,6 +10,8 @@
     Contamos con la mejor variedad de diseños y equipos de mates.">
     <meta name="keywords" content="MATE TERMOS BOMBILLA CANASTOS BOLSOS CAMIONERO IMPERIAL TORPEDO">
     <title>De La Casa - Mates</title>
+    <!-- ---------- Font Awesome ---------- -->
+    <script src="https://kit.fontawesome.com/ead0ae6dff.js" crossorigin="anonymous"></script>
     <!-- ---------- Google Fonts ---------- -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -23,7 +25,7 @@
 
 <body>
     <!-- -------------------- Menú Navegación -------------------- -->
-    <nav class="navbar navbar-expand-lg navContenedor navAlternativo">
+    <nav class="navbar navbar-expand-lg navContenedor navbarMarron">
         <div class="container-fluid">
             <a class="navbar-brand navbar__logo" href="../index.html"><img src="../multimedia/logoSinFondo.png" alt="logo" width="65"
                     height="60"></a>
@@ -33,7 +35,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <ul class="navbar-nav navbar-custom me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
                         <a class="nav-link navbar__efectoMenu" href="../index.html">inicio</a>
                     </li>
@@ -58,9 +60,9 @@
                 </ul>
             </div>
             <div class="navbar__iconos collapse navbar-collapse">
-                <a href="https://www.facebook.com/delacasarosario" target="_blank"><img src="../multimedia/facebook.png" alt="logo facebook" width="25px" height="25px"></a>
-                <a href="https://twitter.com/" target="_blank"><img src="../multimedia/twitter.png" alt="logo twitter" width="25px" height="25px"></a>
-                <a href="https://www.instagram.com/delacasa.rosario/" target="_blank"><img src="../multimedia/instagram.png" alt="logo instagram" width="25px" height="25px"></a>
+                <a href="https://www.facebook.com/delacasarosario" target="_blank"><img src="../multimedia/facebookBlanco.png" alt="logo facebook" width="25px" height="25px"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="../multimedia/twitterBlanco.png" alt="logo twitter" width="25px" height="25px"></a>
+                <a href="https://www.instagram.com/delacasa.rosario/" target="_blank"><img src="../multimedia/instagramBlanco.png" alt="logo instagram" width="25px" height="25px"></a>
             </div>
         </div>
     </nav>
@@ -89,7 +91,7 @@
     </section>
 
     <!-- -------------------- Personaliza tu mate -------------------- -->
-    <section>
+    <section id="grabados">
         <div class="infoGrabados">
             <div class="infoGrabados__col">
                 <h3 class="tituloPrimario largo">PODES PERSONALIZAR TU MATE!</h3>
@@ -115,6 +117,120 @@
         </div>
     </section>
 
+    <!-- -------------------- Cards Productos -------------------- -->
+    <div class="row">
+        <div class="col-md-3 col-sm-6 productoCard">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image"><img src="../multimedia/mates/camioneroAceroCincelado.jpg"></a>
+                    <span class="product-sale-label">oferta!</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Camionero Acero Cincelado</a></h3>
+                    <div class="price"><span>$1.500</span> $1.200</div>
+                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 productoCard">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image"><img src="../multimedia/mates/camioneroAceroLiso.jpg"></a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Camionero Acero Liso</a></h3>
+                    <div class="price">$1.000</div>
+                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 productoCard">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image"><img src="../multimedia/mates/camioneroAlpacaCincelado.jpg"></a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Camionero Alpaca Cincelado</a></h3>
+                    <div class="price">$2.000</div>
+                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 productoCard">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image"><img src="../multimedia/mates/camioneroAlpacaLiso.jpg"></a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Camionero Alpaca Liso</a></h3>
+                    <div class="price">$1.800</div>
+                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 productoCard">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image"><img src="../multimedia/mates/torpedoAceroCincelado.jpg"></a>
+                    <span class="product-sale-label">oferta!</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Torpedo Acero Cincelado</a></h3>
+                    <div class="price"><span>$1.500</span> $1.200</div>
+                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 productoCard">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image"><img src="../multimedia/mates/torpedoAceroLiso.jpg"></a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Torpedo Acero Liso</a></h3>
+                    <div class="price">$700</div>
+                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 productoCard">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image"><img src="../multimedia/mates/torpedoAlpacaLiso.jpg"></a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Torpedo Alpaca Liso</a></h3>
+                    <div class="price">$1.100</div>
+                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 productoCard">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image"><img src="../multimedia/mates/torpedoAluminioLiso.jpg"></a>
+                    <span class="product-sale-label">oferta!</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Torpedo Aluminio Liso</a></h3>
+                    <div class="price"><span>$700</span> $500</div>
+                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 productoCard">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image"><img src="../multimedia/mates/imperialAlpaca.jpg"></a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Imperial Alpaca</a></h3>
+                    <div class="price">$3000</div>
+                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <footer class="footer">
 
@@ -134,7 +250,7 @@
             <a href="termos.html">Termos</a>
             <a href="bombillas.html">Bombillas</a>
             <a href="bolsos_materos.html">Bolsos</a>
-            <a href="grabados.html">Grabados</a>
+            <a href="combos.html">Combos</a>
         </div>
 
         <div class="footer__redes">

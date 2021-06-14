@@ -7,8 +7,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
     & .infoMates__card:nth-child(2){
         p{
             padding: 0px 29px;
@@ -24,11 +23,11 @@
     h1,h2 {
         margin-top: 20px;
         margin-bottom: 10px;
-        color: $marron;
+        color: $amarillo;
     }
 
     p {
-        color: #4A412A;
+        color: white;
         text-align: center;
         font-weight: 400;
         margin-bottom: 20px;
@@ -42,10 +41,9 @@
         align-items: center;
         width: 25rem;
         height: 31.25rem;
-        background-color: $amarillo;
+        background-color: $marron;
         padding: 20px;
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-        margin-top: 20px;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     }
 }
 
@@ -54,7 +52,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 6%;
+    padding: 0 6%;
+    margin-top: 60px;
     .corto{
         display: none;
     }
@@ -106,7 +105,6 @@
         height: 220px;
     }
 }
-
 @media only screen and (max-width: 800px){
     .infoMates__card{
         margin-top: 2.5rem;
@@ -118,7 +116,11 @@
         }
     }
 }
-
+@media only screen and (max-width: 1200px) and (min-width: 800px){
+    .infoMates__card:nth-child(3){
+        margin-top: 20px;
+    }
+}
 @media only screen and (max-width: 1152px){
     .infoGrabados{
         flex-wrap: wrap;

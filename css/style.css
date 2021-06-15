@@ -853,7 +853,7 @@ a {
           align-items: center;
   width: 100%;
   background-color: #EBEBEB;
-  padding: 20px 30px;
+  padding: 60px 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1381,6 +1381,9 @@ input[type="submit"]:hover {
   .header__texto p {
     display: none;
   }
+  .gridFotos {
+    display: none;
+  }
   #firstSection {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1638,6 +1641,13 @@ input[type="submit"]:hover {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1550px) {
+  #secondSection .nosotros__mate {
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
   }
 }
 

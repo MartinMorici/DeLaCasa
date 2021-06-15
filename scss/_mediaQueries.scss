@@ -43,6 +43,9 @@
         }
     }
 
+    .gridFotos{
+        display: none;
+    }
 
     #firstSection {
         flex-direction: column;
@@ -300,5 +303,13 @@
 
     .footer__redes {
         align-self: center;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1550px) {
+    #secondSection{
+        .nosotros__mate{
+            transform: translateX(-40px);
+        }
     }
 }

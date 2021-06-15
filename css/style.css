@@ -180,6 +180,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   margin-right: 3.125rem;
@@ -1487,6 +1493,12 @@ input[type="submit"]:hover {
     width: 95%;
     margin: 0;
   }
+  .footer {
+    padding: 40px 0px 20px 0px;
+  }
+  .footer__contacto {
+    text-align: center;
+  }
 }
 
 /* --------- Medium devices (landscape tablets, 768px and up) ----------- */
@@ -1676,5 +1688,27 @@ input[type="submit"]:hover {
 
 .cremita {
   color: #eaac7f;
+}
+
+/* ----------------- ICONOS -------------------- */
+.iredes {
+  color: white;
+  font-size: 30px;
+}
+
+.face:hover {
+  color: #3b5998;
+}
+
+.wpp:hover {
+  color: #4FCE5D;
+}
+
+.ig:hover {
+  color: #C13584;
+}
+
+.marr {
+  color: #331C08;
 }
 /*# sourceMappingURL=style.css.map */

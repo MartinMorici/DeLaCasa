@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Mulish:wght@300;400;600;700&display=swap"
         rel="stylesheet">
+    <!-- ---------- Animate on Scroll ---------- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- ---------- Bootstrap CSS ---------- -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
@@ -77,9 +79,9 @@
         </nav>
 
         <div class="header__texto">
-            <h1 class="header__titulo">Tomar mate,<br>es siempre una <span style="color: #FFDF91;">buena idea.</span>
+            <h1 class="header__titulo" data-aos="fade-right" data-aos-duration="1000">Tomar mate,<br>es siempre una <span style="color: #FFDF91;">buena idea.</span>
             </h1>
-            <p>Tenemos la mayor variedad de mates, termos y bombillas. <br>
+            <p data-aos="fade-right" data-aos-duration="1000">Tenemos la mayor variedad de mates, termos y bombillas. <br>
                 Descubre y explora nuestras categorías de productos y <br>
                 elegí el combo matero ideal para vos!</p>
             <a href="#secondSection">
@@ -131,24 +133,26 @@
     <!-- -------------------- Divisor / Banner El Mate -------------------- -->
     <div class="elmate">
         <div class="centrar">
-            <h2 class="elmate__titulo">EL MATE</h2>
-            <p class="elmate__texto">Ritual eterno. El mate. Esencial en una reunión familiar o juntada con amigos,
+            <h2 class="elmate__titulo" data-aos="fade-up" >EL MATE</h2>
+            <p class="elmate__texto" data-aos="fade-up">Ritual eterno. El mate. Esencial en una reunión familiar o juntada con amigos,
                 siempre está presente. <br>
                 El agua, la yerba, la bombilla y hasta la forma de cebarlo puede afectar el resultado final. <br>
                 Cambia la forma en que se lo prepara, algunos lo prefieren dulce, otros amargos. <br> Lo que es seguro
                 es que en la mayoría de las casas hay un mate.</p>
-            <a href="./pages/mates.html" class="elmate__boton">
-                <div >NUESTROS MATES</div>
-            </a>
+            <div data-aos="fade-up">
+                <a href="./pages/mates.html" class="elmate__boton">
+                    <div>NUESTROS MATES</div>
+                </a>
+            </div>
         </div>
     </div>
 
     <!-- -------------------- Second Section / Nosotros -------------------- -->
     <section id="secondSection">
-        <img class="nosotros__mate" src="./multimedia/nosotrosImagen2.png" alt="mate torpedo con bombilla">
+        <img class="nosotros__mate" data-aos="fade-right" data-aos-duration="1500" src="./multimedia/nosotrosImagen2.png" alt="mate torpedo con bombilla">
         <div class="nosotros__texto">
-            <h3>¿ PORQUÉ CONFIAR EN NOSOTROS ?</h3>
-            <p>
+            <h3 data-aos="fade-up">¿ PORQUÉ CONFIAR EN NOSOTROS ?</h3>
+            <p data-aos="fade-up">
                 <span class="negrita">De La Casa</span> es una empresa familiar nacida en 2015 en Rosario, Santa Fe,
                 creada con una gran dedicación y trabajo. Podrás encontrar una gran variedad de mates elaborados
                 por <span class="negrita">procesos artesanales</span>. Podés personalizar nuestros mates a tu
@@ -173,14 +177,14 @@
 
     <!-- -------------------- Third Section / Cards ENVIOS PAGOS CONTACTO -------------------- -->
     <section id="thirdSection">
-        <div>
+        <div data-aos="fade-right" data-aos-duration="1000">
             <img src="./multimedia/express-delivery.png" alt="vehiculo de envios">
             <h4>ENVIOS <span style="display: block;">A TODO EL PAIS</span></h4>
             <p>Elegí Mercado Envíos y</p> 
             <p>seguí tu compra hasta que</p>
             <p>llegue a tus manos.</p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="1000">
             <img src="./multimedia/payment-method.png" alt="pago en efectivo">
             <h4>PAGO CON TARJETA<span style="display: block;"> O EN EFECTIVO</span></h4>
             <p>Con Mercado Pago, tenés </p>
@@ -188,7 +192,7 @@
             <p>efectivo en puntos de pago.</p>
             <p>¡Y siempre es seguro!</p>
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-duration="1000">
             <img src="./multimedia/contacts.png" alt="agenda de contactos">
             <h4>CONTACTATE <span style="display: block;">CON NOSOTROS</span></h4>
             <p>Contactanos a través de</p>
@@ -258,7 +262,11 @@
         </div>
 
     </footer>
-
+    <!-- ---------- Animation on Scroll Scripts ---------- -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
     <!-- ---------- Bootstrap Scripts ---------- -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">

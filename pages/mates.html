@@ -17,6 +17,8 @@
     <!-- ---------- Google Fonts ---------- -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- ---------- Animate on Scroll ---------- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- ---------- Bootstrap CSS ---------- -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">    
     <!-- ---------- CSS ---------- -->
@@ -71,7 +73,7 @@
 
     <!-- -------------------- Info Mates -------------------- -->
     <section>
-        <div class="infoMates">
+        <div class="infoMates" data-aos="fade-up" data-aos-duration="1000">
             <div class="infoMates__card">
                 <img src="../multimedia/mates/infoCamionero.png" width="250" height="250" alt="mate camionero">
                 <h1 class="tituloPrimario">MATE CAMIONERO</h1>
@@ -96,10 +98,10 @@
     <section id="grabados">
         <div class="infoGrabados">
             <div class="infoGrabados__col">
-                <h3 class="tituloPrimario largo">PODES PERSONALIZAR TU MATE!</h3>
-                <h3 class="tituloPrimario corto">PERSONALIZA TU MATE!</h3>
+                <h3 class="tituloPrimario largo" data-aos="fade-right" data-aos-duration="1200">PODES PERSONALIZAR TU MATE!</h3>
+                <h3 class="tituloPrimario corto" data-aos="fade-right" data-aos-duration="1200">PERSONALIZA TU MATE!</h3>
                 <div class="barra"></div>
-                <p>
+                <p data-aos="fade-up" data-aos-duration="1000">
                     En De La Casa buscamos que cada uno de nuestros clientes se sienta identificado con nuestros productos, y para ello, nada mejor que personalizarlo a su manera. <br> <br>
                     La personalización consiste en que vos como cliente nos cuentes tu idea para el grabado del mate, y nosotros realizamos un diseño que se asemeje. <br> <br>
                     <span class="negrita">Se pueden grabar nombres, frases, escudos, logos y dibujos. Realizamos grabados sobre cuero y virola.</span>
@@ -108,7 +110,7 @@
                     <div class="infoGrabados__boton hvr-forward">Consultanos</div>
                 </a>
             </div>
-            <div class="imgGrabados">
+            <div class="imgGrabados" data-aos="fade-left" data-aos-duration="1000">
                 <img src="../multimedia/grabados/g1.png"
                     alt="grabado de mate en virola con texto y dibujos de flores para regalar a mama">
                 <img src="../multimedia/grabados/g2.png"
@@ -266,7 +268,11 @@
 
     </footer>
 
-
+    <!-- ---------- Animation on Scroll Scripts ---------- -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
     <!-- ---------- Bootstrap Scripts ---------- -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 

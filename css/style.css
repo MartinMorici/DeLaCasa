@@ -9,13 +9,16 @@
   line-height: normal;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Mulish', sans-serif;
   font-weight: 300;
   font-size: 1em;
   color: white;
   /*Light 300 Regular 400*/
-  overflow-x: hidden;
 }
 
 h1,

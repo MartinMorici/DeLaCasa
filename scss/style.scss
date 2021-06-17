@@ -11,6 +11,9 @@ $cremita: #eaac7f;
     box-sizing: border-box;
     line-height: normal;
 }
+html, body {
+    overflow-x: hidden;
+    }
 
 body {
     font-family: 'Mulish', sans-serif;
@@ -18,7 +21,6 @@ body {
     font-size: 1em;
     color: white;
     /*Light 300 Regular 400*/
-    overflow-x: hidden
 }
 
 h1,

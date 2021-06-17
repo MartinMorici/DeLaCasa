@@ -36,7 +36,7 @@ a {
 
 /* ---------------------- Header ----------------------*/
 .header {
-  background-image: url(../multimedia/background_header.png);
+  background-image: url(../multimedia/background_header.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -320,7 +320,7 @@ a {
   position: relative;
   height: 31.25rem;
   width: 100%;
-  background-image: url(../multimedia/elmate.png);
+  background-image: url(../multimedia/elmate.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -393,7 +393,7 @@ a {
 
 /* ----------------------Nosotros----------------------*/
 #secondSection {
-  background-image: url(../multimedia/fondoNosotros.png);
+  background-image: url(../multimedia/fondoNosotros.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

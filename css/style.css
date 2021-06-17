@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* ----------------------ETIQUETAS----------------------*/
-/* -------------PALETA------------------*/
 * {
   margin: 0px;
   padding: 0px;
@@ -918,6 +917,7 @@ a {
   }
 }
 
+/* --------------- Combos --------------- */
 .infoCombos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1728,7 +1728,7 @@ input[type="submit"]:hover {
           filter: brightness(80%);
 }
 
-/* ----------------------CLASES----------------------*/
+/* ----------------------CLASES MISCELANEAS----------------------*/
 .bodyColor {
   background-color: #E9E8E7;
 }

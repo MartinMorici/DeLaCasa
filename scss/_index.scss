@@ -12,7 +12,6 @@
     position: relative;
     background-color: black;
 }
-
 .header__texto {
     position: absolute;
     width: 100%;
@@ -20,11 +19,9 @@
     left: 3%;
     color: black;
     font-size: 1rem;
-
     p {
         color: white;
     }
-
     .header__titulo {
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
@@ -32,7 +29,6 @@
         color: #ffffff;
         margin-bottom: 1.25rem;
     }
-
     .header__boton {
         display: flex;
         position: absolute;
@@ -47,7 +43,6 @@
         color: black;
     }
 }
-
 .hvr-forward {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -57,7 +52,6 @@
     -webkit-transition-property: transform;
     transition-property: transform;
 }
-
 .hvr-forward:hover,
 .hvr-forward:focus,
 .hvr-forward:active {
@@ -65,15 +59,12 @@
     transform: translateX(8px);
 }
 
-
-
 /* -------------------- Navbar  --------------------  */
 .navContenedor {
     width: 100%;
     height: 4.375rem;
     background-color: rgba(253, 253, 253, 0.26);
 }
-
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 10px 20px;
     display: flex;
@@ -85,23 +76,18 @@
     letter-spacing: 1px;
     position: relative;
 }
-
 .navbar-expand-lg .navbar-collapse {
     flex-grow: unset;
 }
-
 .navbar {
     padding: 0px;
 }
-
 .navbar-toggler-icon {
     background-image: url(../multimedia/menu.png);
 }
-
 .navbar-brand {
     margin: 0px;
 }
-
 .navbar__efectoMenu::after {
     position: absolute;
     content: '';
@@ -114,22 +100,18 @@
     border-radius: 10px;
 
 }
-
 .navbar__efectoMenu:hover::after {
     width: 100%;
     transition: width 0.5s;
 }
-
 .navbar-nav .nav-item .nav-link:hover {
     color: $cremita;
 }
-
 .navbar__logo {
     cursor: pointer;
     margin-left: 3.125rem;
 
 }
-
 .navbar__iconos {
     display: flex;
     justify-content: center;
@@ -137,27 +119,21 @@
     flex-wrap: nowrap;
     margin-right: 3.125rem;
 }
-
 .navbar__iconos img:hover {
     filter: invert(41%) sepia(35%) saturate(481%) hue-rotate(343deg) brightness(97%) contrast(96%);
 }
-
 .navbar__iconos a:not(:first-child) {
     margin-left: 15px;
 }
-
 #seccionActiva {
     color: $cremita;
 }
-
 .navAlternativo {
     border-bottom: 1px solid rgba(0, 0, 0, 0.411);
 }
-
 .navbarBlanco{
     background-color: rgb(255, 255, 255);
 }
-
 .navbarMarron{
     background-color: #523E2D;
 }
@@ -170,7 +146,6 @@
 }
 
 /* ---------------------- Categorias de productos ----------------------*/
-
 #firstSection {
     display: flex;
     justify-content: center;
@@ -179,7 +154,6 @@
     width: 100%;
     height: auto;
     margin: 5px 0px;
-
     .categoria {
         position: relative;
         text-align: center;
@@ -188,19 +162,16 @@
         height: auto;
         font-size: 0%;
         margin: 5px 5px;
-
         img {
             transition: all 1s;
             width: 100%;
             overflow: hidden;
         }
-
         &:hover img {
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
         }
     }
-
     .categoria__nombre {
         position: absolute;
         top: 60%;
@@ -211,7 +182,6 @@
         letter-spacing: 2px;
         pointer-events: none;
     }
-
     .categoria__boton {
         display: flex;
         justify-content: center;
@@ -229,7 +199,6 @@
         transition: ease-in-out 0.4s;
         border: 2px solid white;
         letter-spacing: 0.5px;
-
         &:hover {
             background-color: #91684A;
             color: #FFDF91;
@@ -237,13 +206,11 @@
         }
     }
 }
-
 .oscurecer {
     filter: brightness(75%);
 }
 
 /* ---------------------- Divisor/Banner El Mate ----------------------*/
-
 .elmate {
     position: relative;
     height: 31.25rem;
@@ -254,7 +221,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin-top: 5px;
-
     &:before {
         content: '';
         position: absolute;
@@ -264,7 +230,6 @@
         bottom: 0;
         background: rgba(0, 0, 0, 0.459);
     }
-
     .elmate__titulo {
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
@@ -273,13 +238,11 @@
         text-align: center;
         margin-bottom: 20px;
     }
-
     .elmate__texto {
         position: relative;
         text-align: center;
         font-size: 20px;
     }
-    
     .elmate__boton {
         position: relative;
         display: flex;
@@ -300,7 +263,6 @@
             color: #FFDF91;
         }
     }
-
     .centrar {
         position: relative;
         top: 50%;
@@ -308,9 +270,7 @@
         transform: translate(-50%, -50%);
     }
 }
-
 /* ----------------------Nosotros----------------------*/
-
 #secondSection {
     background-image: url(../multimedia/fondoNosotros.jpg);
     background-size: cover;
@@ -325,7 +285,6 @@
     padding: 80px 50px;
     position: relative;
     overflow: hidden;
-    
     .nosotros__mate {
         position: absolute;
         max-width: 100%;
@@ -334,7 +293,6 @@
         left: 8%;
         z-index: 1;
     }
-
     .nosotros__texto {
     display: flex;
     flex-direction: column;
@@ -360,23 +318,19 @@
             margin-bottom: 2rem;
         }
     }
-
     .nosotrosArriba {
         display: none;
     }
-    
     .nosotrosAbajo {
         display: none;
     }
     
 }
-
 .negrita {
     font-weight: bold;
 }
 
 /* ----------------------Envios / Pagos / Contacto----------------------*/
-
 #thirdSection {
     display: flex;
     justify-content: space-around;
@@ -386,7 +340,6 @@
     font-weight: 400;
     width: 100%;
     margin: 45px 0px 50px 0px;
-
     h4 {
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
@@ -395,18 +348,15 @@
         width: 100%;
         margin-bottom: 40px;
     }
-
     p {
         color: #4B4747;
     }
-
     div {
         background-color: #FFDF91;
         height: 31.25rem;
         width: 25rem;
         text-align: center;
         box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-
         img {
             margin-top: 80px;
             margin-bottom: 40px;
@@ -417,7 +367,6 @@
 }
 
 /* ----------------- Grid Fotos ----------------- */
-
 .gridFotos {
     padding: 1rem;
     display: grid;
@@ -426,7 +375,6 @@
     grid-auto-rows: 240px;
     background: rgb(19, 19, 19);
 }
-
 .tarjeta {
     display: flex;
     flex-direction: column;
@@ -448,12 +396,10 @@
 .t1560, .t1808, .t1295, .t1038, .t783{
     display: none;
 }
-
 .tarjeta:hover {
     box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35rem 1.175rem, rgba(2, 8, 20, 0.08) 0px 0.175rem 0.5rem;
     transform: translateY(-3px) scale(1.1);
 }
-
 @media only screen and (min-width: 1552px){
     .t1560{
         display: block;
@@ -465,7 +411,6 @@
         display: none;
     }
 }
-
 @media only screen and (min-width: 1808px){
     .t1808{
         display: block;
@@ -480,7 +425,6 @@
         display: none;
     }
 }
-
 @media only screen and (max-width: 1295px){
     .t1295{
         display: block;
@@ -494,7 +438,6 @@
     }
 
 }
-
 @media only screen and (max-width: 1038px){
     .t1038{
         display: block;
@@ -503,7 +446,6 @@
         display: none;
     }
 }
-
 @media only screen and (max-width: 783px){
     .t783{
         display: block;

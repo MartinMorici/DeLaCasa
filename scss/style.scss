@@ -1,10 +1,9 @@
 /* ----------------------ETIQUETAS----------------------*/
-/* -------------PALETA------------------*/
+// PALETA
 $amarillo: #FFDF91;
 $marron: #331C08;
 $marronClaro: #91684a;
 $cremita: #eaac7f;
-
 * {
     margin: 0px;
     padding: 0px;
@@ -22,7 +21,6 @@ body {
     color: white;
     /*Light 300 Regular 400*/
 }
-
 h1,
 h2 {
     line-height: normal;
@@ -39,7 +37,6 @@ a {
     text-decoration: none;
 }
 
-
 @import "./index";
 @import "./footer";
 @import "./mates";
@@ -49,9 +46,7 @@ a {
 @import "./productos";
 @import "./mediaQueries";
 
-
 /* ----------------------Divisor Video----------------------*/
-
 .video {
     width: 100%;
     background-color: black;
@@ -59,9 +54,7 @@ a {
     object-fit: cover;
     filter: brightness(80%);
 }
-
-/* ----------------------CLASES----------------------*/
-
+/* ----------------------CLASES MISCELANEAS----------------------*/
 .bodyColor{
     background-color: #E9E8E7;
 }
@@ -76,25 +69,20 @@ a {
 .cremita{
     color: $cremita;
 }
-
 /* ----------------- ICONOS -------------------- */
 .iredes{
     color: white;
     font-size: 30px;
 }
-
 .face:hover{
     color: #3b5998;
 }
-
 .wpp:hover{
     color: #4FCE5D;
 }
-
 .ig:hover{
     color: #C13584;
 }
-
 .marr{
     color: $marron;
 }

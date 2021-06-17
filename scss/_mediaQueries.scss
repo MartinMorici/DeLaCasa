@@ -1,5 +1,4 @@
 /* -------- Grid Fotos -------- */
-
 @media screen and (min-width: 600px) {
     .tarjetaAlta {
         grid-row: span 2 / auto;
@@ -9,100 +8,78 @@
         grid-column: span 2 / auto;
     }
 }
-
-
-
 /* -------- Extra small devices (phones, 600px and down) -------- */
 @media only screen and (max-width: 600px) {
-
     .navMenu {
         display: none;
     }
-
     .navbar__iconos {
         display: none;
     }
-
     .header__texto {
         top: 38%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-
         h1 {
             font-size: 35px;
             padding: 0px 5%;
         }
-
         a {
             display: flex;
             width: 100%;
             align-items: center;
             justify-content: center;
         }
-
         p {
             display: none;
         }
     }
-
     .gridFotos {
         display: none;
     }
-
     #firstSection {
         flex-direction: column;
         align-items: center;
         margin: 0;
-
         .categoria {
             width: 100%;
             margin: 1px 0px;
-
             .categoria__boton {
                 font-size: 0.9rem;
             }
         }
     }
-
-
     .elmate {
         margin-top: 0;
-
         .elmate__titulo {
             font-size: 30px;
         }
-
         .elmate__texto {
             padding: 0px 2rem;
             font-size: 1.125rem;
             text-align: justify;
         }
-
         .elmate__boton {
             width: 12.5rem;
             height: 2.5rem;
             font-size: 14px;
         }
     }
-
     #secondSection {
         background-image: none;
         position: relative;
         flex-direction: column;
         height: auto;
         padding: 80px 20px;
-
         .nosotros__mate {
             display: none;
         }
-
         .nosotros__texto {
             position: unset;
             margin: 50px 0px;
             padding: 0px;
         }
-
         .nosotrosAbajo {
             display: block;
             position: absolute;
@@ -110,7 +87,6 @@
             bottom: 0;
             z-index: 1;
         }
-
         .nosotrosArriba {
             display: block;
             position: absolute;
@@ -122,20 +98,17 @@
 
     #thirdSection {
         margin: 0px 0px;
-
         div {
             width: 90%;
             height: 29rem;
             margin-bottom: 20px;
         }
     }
-
     .infoMates {
         .infoMates__card {
             width: 95%;
             height: auto;
             padding: 20px 0px;
-
             h1,
             h2 {
                 text-align: center;
@@ -143,18 +116,15 @@
             }
         }
     }
-
     .infoBolsos {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         h1 {
             width: 100%;
             margin-right: 0px;
             margin-bottom: 10px;
         }
-
         p {
             width: 95%;
             margin: 0;
@@ -164,11 +134,9 @@
     .footer {
         padding: 40px 0px 20px 0px;
     }
-
     .footer__contacto {
         text-align: center;
     }
-
 }
 
 
@@ -178,31 +146,25 @@
         top: 30%;
         left: 5%;
     }
-
     #firstSection {
         .categoria {
             margin: 2px 2px;
             width: 48%;
         }
     }
-
     .elmate p {
         padding: 0px 10%;
     }
-
     #secondSection {
         background-image: none;
         height: auto;
-
         .nosotros__mate {
             display: none;
         }
-
         .nosotros__texto {
             position: unset;
             padding: 10% 0;
         }
-
         .nosotrosAbajo {
             display: block;
             position: absolute;
@@ -210,7 +172,6 @@
             bottom: 0;
             z-index: 1;
         }
-
         .nosotrosArriba {
             display: block;
             position: absolute;
@@ -219,22 +180,17 @@
             z-index: 1;
         }
     }
-
     #thirdSection {
         display: flex;
         flex-direction: column;
-
         div {
             margin-top: 30px;
         }
 
     }
 }
-
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1400px) {
-
     .header {
         .header__texto {
             position: absolute;
@@ -242,12 +198,10 @@
             top: 30%;
             left: 3%;
             color: black;
-
             p {
                 font-size: 1.25rem;
             }
         }
-
         .header__titulo {
             font-family: 'Josefin Sans', sans-serif;
             font-weight: 400;
@@ -256,8 +210,6 @@
             margin-bottom: 1.25rem;
         }
     }
-
-
     #firstSection {
         display: flex;
         align-items: center;
@@ -266,19 +218,16 @@
         width: 100%;
         padding: 20px;
     }
-
     #secondSection {
         .nosotrosArriba {
             display: none;
         }
-
         .nosotrosAbajo {
             display: none;
 
         }
     }
 }
-
 /* Cambia color menu navegación */
 @media (max-width: 992px) {
     .navContenedor {
@@ -286,17 +235,14 @@
         background-color: rgba(255, 255, 255, 0.788);
         z-index: 1;
     }
-
     .navbar-expand-lg .navbar-custom .nav-link {
         color: $marron;
         font-weight: 700;
     }
-
     .navbar__logo {
         margin-left: 1.5rem;
     }
 }
-
 @media (min-width: 1596px) {
     #secondSection {
         .nosotros__texto {
@@ -304,27 +250,23 @@
         }
     }
 }
-
 /* Elimina iconos menu navegación */
 @media (max-width: 1090px) {
     .navbar__iconos img {
         display: none;
     }
 }
-
 /* Rompe Footer */
 @media (max-width: 850px) {
     .footer {
         flex-direction: column;
     }
-
     .footer img,
     .footer__contacto,
     .footer__secciones,
     .footer__redes {
         margin-bottom: 20px;
     }
-
     .footer__redes {
         align-self: center;
     }

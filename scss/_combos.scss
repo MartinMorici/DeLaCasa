@@ -1,4 +1,4 @@
-
+/* --------------- Combos --------------- */
 .infoCombos{
     display: flex;
     justify-content: center;
@@ -66,7 +66,6 @@
         }
     }
 }
-
 @media only screen and (max-width: 1100px) {
     .infoCombos{
         text-align: center;
@@ -92,7 +91,6 @@
         }
     }
 }
-
 @media only screen and (max-width: 500px) {
     .infoCombos{
         img{

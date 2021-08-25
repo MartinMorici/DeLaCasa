@@ -1,4 +1,37 @@
 /* --------------- Cards - Productos --------------- */
+
+.filtroProductos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    p{
+        color: black;
+        margin-right: 0.5%;
+    }
+    input{
+        height: 45px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .input1{
+        margin-left: 2%;
+        margin-right: 0.5%;
+    }
+    .filtroProductos__texto{
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .iconoEnter{
+        color: $marronClaro;
+        font-size: 25px;
+        margin-left: 1.5%;
+        cursor: pointer;
+    }
+}
+
+
 .product-grid{
     font-family: 'Mulish', sans-serif;
     text-align: center;
@@ -74,6 +107,21 @@
     color: black;
     background-color: $cremita;
 }
+.product-content{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
 @media screen and (max-width: 990px){
     .product-grid{ margin: 0 0 30px; }
 }
+
+.mensajeFiltro{
+    color: $marronClaro;
+    font-size: 24px;
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    text-align: center;
+  }

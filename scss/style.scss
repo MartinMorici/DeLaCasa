@@ -4,6 +4,7 @@ $amarillo: #FFDF91;
 $marron: #331C08;
 $marronClaro: #91684a;
 $cremita: #eaac7f;
+$gris: #D8D8D8;
 * {
     margin: 0px;
     padding: 0px;
@@ -45,6 +46,7 @@ a {
 @import "./infoSecciones";
 @import "./productos";
 @import "./mediaQueries";
+@import "./carrito";
 
 /* ----------------------Divisor Video----------------------*/
 .video {
@@ -86,3 +88,11 @@ a {
 .marr{
     color: $marron;
 }
+
+/* --------------- ------------------ */
+
+#ingresarProductos{
+    text-align: center;
+    margin-top: 60px;
+}
+

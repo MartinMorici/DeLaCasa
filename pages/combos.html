@@ -65,11 +65,15 @@
                     </ul>
                 </div>
                 <div class="navbar__iconos collapse navbar-collapse">
-                    <a href="https://www.facebook.com/delacasarosario" target="_blank" rel="noreferrer"><i
-                            class='iredes face bx bxl-facebook'></i></a>
-                    <a href="https://wa.me/543413649276" target="_blank" rel="noreferrer"><i class='iredes wpp bx bxl-whatsapp'></i></a>
-                    <a href="https://www.instagram.com/delacasa.rosario/" target="_blank" rel="noreferrer"><i
-                            class='iredes ig bx bxl-instagram'></i></a>
+                    <div class="contenedorCantidad">
+                        <a href="./carrito.html"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="./carrito.html">
+                            <div id="cantidadCarrito">0</div>
+                        </a>
+                    </div>
+                    <a href="https://www.facebook.com/delacasarosario" target="_blank" rel="noreferrer"><i class='iredes face bx bxl-facebook'></i></a>
+                    <a href="https://wa.me/543413649276" target="_blank" rel="noreferrer"><i class='iredes wpp bx bxl-whatsapp' ></i></a>
+                    <a href="https://www.instagram.com/delacasa.rosario/" target="_blank" rel="noreferrer"><i class='iredes ig bx bxl-instagram' ></i></a>
                 </div>
             </div>
         </nav>
@@ -97,92 +101,16 @@
     </div>
 
     <!-- -------------------- Cards Productos -------------------- -->
-    <div class="row">
-        <div class="col-md-3 col-sm-6 productoCard">
-            <div class="product-grid">
-                <div class="product-image">
-                    <a href="#" class="image"><img src="../multimedia/combos/comboCompleto2.jpg"></a>
-                </div>
-                <div class="product-content">
-                    <h3 class="title"><a href="#">COMBO COMPLETO 2</a></h3>
-                    <div class="price">$5.600</div>
-                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 productoCard">
-            <div class="product-grid">
-                <div class="product-image">
-                    <a href="#" class="image"><img src="../multimedia/combos/comboCompleto3.jpg"></a>
-                </div>
-                <div class="product-content">
-                    <h3 class="title"><a href="#">COMBO COMPLETO 3</a></h3>
-                    <div class="price">$4.800</div>
-                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 productoCard">
-            <div class="product-grid">
-                <div class="product-image">
-                    <a href="#" class="image"><img src="../multimedia/combos/mediaManijaCamioneroBombilla.jpg"></a>
-                </div>
-                <div class="product-content">
-                    <h3 class="title"><a href="#">Termo + Camionero + Bombilla</a></h3>
-                    <div class="price">$6.500</div>
-                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 productoCard">
-            <div class="product-grid">
-                <div class="product-image">
-                    <a href="#" class="image"><img src="../multimedia/combos/mediaManijaTorpedoBombilla1.jpg"></a>
-                </div>
-                <div class="product-content">
-                    <h3 class="title"><a href="#">Termo + Torpedo + Bombilla</a></h3>
-                    <div class="price">$5.600</div>
-                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 productoCard">
-            <div class="product-grid">
-                <div class="product-image">
-                    <a href="#" class="image"><img src="../multimedia/combos/mediaManijaTorpedoBombilla2.jpg"></a>
-                </div>
-                <div class="product-content">
-                    <h3 class="title"><a href="#">Termo + Torpedo + Bombilla </a></h3>
-                    <div class="price">$5.600</div>
-                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 productoCard">
-            <div class="product-grid">
-                <div class="product-image">
-                    <a href="#" class="image"><img src="../multimedia/combos/torpedoPicoLoro.jpg"></a>
-                </div>
-                <div class="product-content">
-                    <h3 class="title"><a href="#">Torpedo + Pico Loro</a></h3>
-                    <div class="price">$2.500</div>
-                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 productoCard">
-            <div class="product-grid">
-                <div class="product-image">
-                    <a href="#" class="image"><img src="../multimedia/combos/camioneroPicoLoro.jpg"></a>
-                </div>
-                <div class="product-content">
-                    <h3 class="title"><a href="#">Camionero + Pico Loro </a></h3>
-                    <div class="price">$2.200</div>
-                    <a class="add-to-cart" href="#"><i class="fas fa-shopping-bag"></i> Añadir al carrito</a>
-                </div>
-            </div>
-        </div>
+    <div class="filtroProductos">
+        <p class="filtroProductos__texto">Filtrar por precio:</p>
+        <input id="precioMin" class="input1 inputPrecio" type="number" placeholder="Mínimo">
+        <p>-</p>
+        <input  id="precioMax" class="input2 inputPrecio" type="number" placeholder="Máximo">
+        <i id="filtro3" class="fas fa-chevron-circle-right iconoEnter"></i>
     </div>
+    
+    <div id="cardsProductos" class="row"></div>
+    
 
     <footer class="footer">
         <a href="../index.html"><img src="../multimedia/logoSinFondo.png" alt="logo"></a>
@@ -219,10 +147,20 @@
     <script>
     AOS.init();
     </script>
+    <!-- ---------- JQuery---------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- ---------- Bootstrap Scripts ---------- -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
     </script>
+    <!-- ---------- Mi JS ---------- -->
+    <script src="../js/globales.js"></script>
+    <script src="../js/producto.js"></script>
+    <script src="../js/function.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/combos.js"></script>
 
 </body>
 

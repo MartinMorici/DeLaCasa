@@ -1,3 +1,4 @@
+
 window.addEventListener('load',()=>{
 
     //MOSTRAR ELEMENTO CON UN FADE

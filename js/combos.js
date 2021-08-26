@@ -6,4 +6,4 @@ setTimeout(()=>{
     filtrado.addEventListener("click", function () {
       filtrarPorPrecio(combos);
     });
-},100)
+},1000)

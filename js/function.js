@@ -39,8 +39,12 @@ function interfazProductos(productos){
 
 // MANEJADOR DE COMPRA DE PRODUCTOS
 function compraManejador(){
+    // Busco producto en el array de productos para generar la notificación.
+    const notificacion = productos.find(p => p.id == this.id);
+    Notiflix.Notify.Success(`Producto agregado al carrito`);
     // Primero compruebo si el objeto está en el carrito / Busco mediante el id dado al boton
     const seleccionado = carrito.find(p => p.id == this.id);
+
     if(seleccionado == undefined) {
     // En caso de que no se encuentre en el carrito lo pusheo al array de productos
         carrito.push(productos.find(p => p.id == this.id))
@@ -67,7 +71,7 @@ function carritoInterfaz(carrito){
             $('#carrito').append(`<div class="mainContainer">
                                         <div class="contenedorDatos flex-shrink">
                                             <div class="contenedorImg">
-                                                <img class="imgProducto" src="${p.img}" alt="">
+                                                <img class="imgProducto img-${p.tipo}" src="${p.img}" alt="">
                                             </div>
                                             <p class="nombreProducto">${p.nombre}</p>
                                             <div class="contador">

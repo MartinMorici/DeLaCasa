@@ -21,7 +21,6 @@ justify-content: space-between;
   background-color: $gris;
   font-size: 24px;
   font-weight: 400;
-  border-radius: 100px;
   .nombreProducto {
     width: 376px;
     padding-right: 5%;
@@ -38,7 +37,7 @@ justify-content: space-between;
     height: 100%;
     display: flex;
     align-items: center;
-    border-radius: 1000px;
+
     padding-right: 5%;
     width: 225px;
   }
@@ -111,6 +110,7 @@ justify-content: space-between;
 .contenedorCantidad{
   position: relative;
   margin-right: 10px;
+  width: 49.75px;
 }
 
 #cantidadCarrito{
@@ -128,4 +128,76 @@ justify-content: space-between;
   user-select: none;
   font-size: 13px;
   font-weight: 800;
+}
+
+
+/* ------ Imágenes Carrito ------ */
+
+.contenedorImg .img-termo{
+  height: 215px;
+  transform: translateX(20px);
+
+}
+.contenedorImg .img-bombilla{
+  height: 220px;
+}
+.contenedorImg .img-combo{
+  height: 250px;
+  transform: translateX(30px);
+}
+
+@media screen and (max-width: 950px){
+  .contenedorDatos {
+    max-width: auto;
+    min-width: 200px;
+    font-size: 16px;
+    .imgProducto{
+      height: 200px;
+      width: auto;
+
+    }
+    .img-mate{
+      transform: translateX(-30px);
+    }
+    .img-combo{
+      transform: translateX(-10px);
+    }
+    .contenedorImg{
+      overflow: hidden;
+      height: 100%;
+      display: initial; 
+      width: auto;
+      padding-right: 0px;
+      display: block;
+    }
+    .nombreProducto {
+      width: auto;
+    }
+}
+.contador__iconos{
+  img{
+    height: 20px;
+  }
+}
+  .padreEliminar{
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 590px){
+  .iconoEliminar{
+    height: 15px;
+  }
+}
+
+@media screen and (max-width: 572px){
+  .contenedorDatos .contenedorImg{
+    display: none;
+  }
+  .contenedorDatos{
+    .nombreProducto{
+      padding-left: 5%;
+      white-space: unset;
+    }
+  }
 }

@@ -6,4 +6,4 @@ setTimeout(()=>{
     filtrado.addEventListener("click", function () {
       filtrarPorPrecio(bolsos);
     });
-},1000)
+},500)

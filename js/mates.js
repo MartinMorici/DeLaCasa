@@ -7,4 +7,4 @@ setTimeout(()=>{
     filtrado.addEventListener("click", function () {
       filtrarPorPrecio(mates);
     });
-},1000)
+},500)

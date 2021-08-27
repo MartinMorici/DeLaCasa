@@ -1,35 +1,6 @@
 /* --------------- Cards - Productos --------------- */
 
-.filtroProductos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    p{
-        color: black;
-        margin-right: 0.5%;
-    }
-    input{
-        height: 45px;
-        text-align: center;
-        font-size: 18px;
-    }
-    .input1{
-        margin-left: 2%;
-        margin-right: 0.5%;
-    }
-    .filtroProductos__texto{
-        color: black;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .iconoEnter{
-        color: $marronClaro;
-        font-size: 25px;
-        margin-left: 1.5%;
-        cursor: pointer;
-    }
-}
+
 
 
 .product-grid{
@@ -113,8 +84,37 @@
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
 }
-@media screen and (max-width: 990px){
-    .product-grid{ margin: 0 0 30px; }
+
+/*------ Filtro Productos ------*/
+.filtroProductos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    p{
+        color: black;
+        margin-right: 0.5%;
+    }
+    input{
+        height: 45px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .input1{
+        margin-left: 2%;
+        margin-right: 0.5%;
+    }
+    .filtroProductos__texto{
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .iconoEnter{
+        color: $marronClaro;
+        font-size: 25px;
+        margin-left: 1.5%;
+        cursor: pointer;
+    }
 }
 
 .mensajeFiltro{
@@ -124,4 +124,36 @@
     margin-top: 50px;
     margin-bottom: 200px;
     text-align: center;
-  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+
+@media screen and (max-width: 990px){
+    .product-grid{ margin: 0 0 30px; }
+}
+
+@media screen and (max-width: 720px){
+.filtroProductos{
+    flex-direction: column;
+    .filtroProductos__texto{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .input1{
+        margin: 0px;
+    }
+    .iconoEnter{
+        margin-top: 10px;
+    }
+}
+}

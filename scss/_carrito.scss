@@ -107,6 +107,19 @@ justify-content: space-between;
 .add-to-cart {
   cursor: pointer;
 }
+.hamburguesa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorCantidadMobile{
+  display: none;
+  position: relative;
+  width: 49.75px;
+  #cantidadCarrito{
+    background-color: rgb(190, 188, 188);
+  }
+}
 .contenedorCantidad{
   position: relative;
   margin-right: 10px;

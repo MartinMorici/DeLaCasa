@@ -1505,9 +1505,6 @@ input[type=number] {
   .navbar__iconos {
     display: none;
   }
-  .contenedorCantidadMobile {
-    display: block;
-  }
   .header__texto {
     top: 38%;
     left: 50%;
@@ -1715,6 +1712,9 @@ input[type=number] {
     height: auto;
     background-color: rgba(255, 255, 255, 0.945);
     z-index: 1;
+  }
+  .contenedorCantidadMobile {
+    display: block;
   }
   .navbar-expand-lg .navbar-custom .nav-link {
     color: #331C08;

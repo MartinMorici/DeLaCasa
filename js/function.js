@@ -63,7 +63,7 @@ function getID(){
 }
 
 function carritoInterfaz(carrito){
-    $('#cantidadCarrito').html(carrito.length);
+    $('.cantidadCarrito').html(carrito.length);
     if (("carrito" in localStorage) && (carrito.length != 0)) {
         const guardadosCarrito = JSON.parse(localStorage.getItem("carrito"));
         $('#carrito').empty();

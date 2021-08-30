@@ -1394,7 +1394,7 @@ input[type=number] {
   width: 49.75px;
 }
 
-.contenedorCantidadMobile #cantidadCarrito {
+.contenedorCantidadMobile .cantidadCarrito {
   background-color: #bebcbc;
 }
 
@@ -1404,7 +1404,7 @@ input[type=number] {
   width: 49.75px;
 }
 
-#cantidadCarrito {
+.cantidadCarrito {
   display: flex;
   justify-content: center;
   align-items: center;

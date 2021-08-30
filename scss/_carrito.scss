@@ -116,7 +116,7 @@ justify-content: space-between;
   display: none;
   position: relative;
   width: 49.75px;
-  #cantidadCarrito{
+  .cantidadCarrito{
     background-color: rgb(190, 188, 188);
   }
 }
@@ -126,7 +126,7 @@ justify-content: space-between;
   width: 49.75px;
 }
 
-#cantidadCarrito{
+.cantidadCarrito{
   display: flex;
   justify-content: center;
   align-items: center;

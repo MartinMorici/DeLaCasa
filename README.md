@@ -1,4 +1,4 @@
-Proyecto realizado en el curso de Desarrollo Web y JavaScript de Coderhouse. Ecommerce funcional (falta integrar método de pago).
+Ecommerce.
 
 Herramientas utilizadas:
 - HTML Semántico
